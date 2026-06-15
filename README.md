@@ -1,3 +1,5 @@
+# MongoPersistentEntityIndexResolver - Found cycle for generic types using different type params
+
 `MongoPersistentEntityIndexResolver` reports a spurious `Found cycle` when a generic class (e.g. Selection<T>) appears at multiple levels of a document hierarchy with different type arguments. No actual cycle exists in the document structure.
 
 Example structure:
